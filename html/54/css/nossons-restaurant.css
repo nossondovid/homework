@@ -11,10 +11,20 @@ header {
     margin: auto;
     margin-bottom: 1em;
     padding: 1em;
-    max-height: 800px;
-    width: 90%;
+    width: 50%;
+    height: 60%;
     box-sizing: border-box;
     border-radius: 30px;
+}
+
+header img {
+    vertical-align: center;
+}
+
+header h1 {
+    width: 40%;
+    margin: auto;
+    margin-bottom: 1em;
 }
 
 nav {
@@ -24,10 +34,11 @@ nav {
     border-radius: 40px;
     border-style: outset;
     margin-top: 0.75em;
+    width: 50%;
+    margin: auto;
 }
 
-.inline-list,
-.inline-list li {
+nav ul, nav li {
     display: inline;
 }
 
