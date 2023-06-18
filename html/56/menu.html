@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="css/nossons-restaurant.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+
+    <style>
+        nav {
+            color: rgb(84, 37, 2);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 1rem;
+            max-width: 200px;
+            margin: auto;
+            text-align: center;
+        }
+
+        nav ul,
+        nav li {
+            display: inline;
+        }
+
+        nav ul {
+            padding-left: 0px;
+        }
+
+        nav li {
+            text-transform: lowercase;
+            font-size: larger;
+            letter-spacing: 2px;
+        }
+
+        figure {
+            color: rgb(84, 37, 2);
+            text-align: center;
+            margin-bottom: 0em;
+        }
+
+        figcaption {
+            margin-bottom: 0.5em;
+        }
+
+        audio {
+            max-width: 400px;
+            margin: auto;
+            overflow: auto;
+        }
+
+        main {
+            width: 60%;
+            margin: auto;
+        }
+
+        .menu-section-title {
+            color: darkred;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 2px blueviolet;
+            text-transform: uppercase;
+            text-align: center;
+            transform: translate();
+            transform: rotate();
+            transform: scale();
+            transform: skew(-20deg);
+            background-color: rgb(104, 225, 149);
+            border: 8px double black;
+            border-radius: 20px;
+            padding: 0.5em;
+            margin: auto;
+            margin-top: 1em;
+            margin-bottom: 1em;
+            max-width: 300px;
+        }
+
+        .menu-subsection-title {
+            color: rgb(99, 21, 255);
+            letter-spacing: 4px;
+            text-shadow: -2px 2px 2px rgb(3, 23, 84);
+            margin-top: 1.5em;
+            margin-bottom: 0.8em;
+            transform: scale(1.5em);
+        }
+
+        .menu ul {
+            list-style: none;
+            display: inline-block;
+            width: 90%;
+
+        }
+
+        .menu li {
+            color: rgb(84, 37, 2);
+            display: inline-block;
+            margin: 1em;
+            text-transform: lowercase;
+            letter-spacing: 2px;
+            /* overflow: auto; */
+        }
+
+        .menu img {
+            float: left;
+            clear: left;
+            margin-right: 1em;
+            position: relative;
+            height: 95px;
+            width: 75px;
+        }
+
+        .right {
+            transform: rotate(8deg);
+        }
+
+        .left {
+            transform: rotate(-8deg);
+        }
+
+        .menu img:hover {
+            z-index: 1;
+        }
+
+        .right:hover {
+            transform: rotate(8deg) scale(1.2);
+        }
+
+        .left:hover {
+            transform: rotate(-8deg) scale(1.2);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Menu</h1>
+    </header>
+    <nav class="menu-page-nav">
+        <ul>
+            <li><a href="index.html">Home</a> |</li>
+            <li><a href="menu.html">Menu</a></li>
+        </ul>
+    </nav>
+    <figure>
+        <figcaption>
+            Enjoy some music while browsing our menu!
+        </figcaption>
+        <audio controls loop>
+            <source src="audio/MBD-Rabbi_Shimon.mp3">
+        </audio>
+    </figure>
+    <main class="menu">
+        <section class="appetizers">
+            <h2 class="menu-section-title"><a href="appetizers.html">Appetizers</a></h2>
+            <article class="soups">
+                <h3 class="menu-subsection-title"><a href="appetizers.html#soups">Soups</a></h3>
+                <ul class="soup-list">
+                    <a href="appetizers.html#mushroom-soup">
+                        <li class="soup-item" id="mushroom-soup">
+                            <img class="right" src="images/mushroom_soup.jpg" alt="mushroom soup">
+                            Mushroom
+                    </a>
+                    - contains mushrooms, barley, and potatoes
+                    </li>
+                    <li class="soup-item" id="vegetable-soup">
+                        <a href="appetizers.html#vegetable-soup">
+                            <img class="left" src="images/vegetable-soup.jpg" alt="vegetable soup">
+                            Vegetable
+                        </a>
+                        - contains carrots, zuchinni, potatoes, celery
+                    </li>
+                    <li class="soup-item" id="chicken-soup">
+                        <a href="appetizers.html#chicken-soup">
+                            <img class="right" src="images/chicken-soup.jpg" alt="chicken soup">
+                            Chicken
+                        </a>
+                        - contains chicken, noodles
+                    </li>
+                    <li class="soup-item" id="minestrone-soup">
+                        <a href="appetizers.html#minestrone-soup">
+                            <img class="left" src="images/minestrone-soup.jpg" alt="">
+                            Minestrone
+                        </a>
+                        - contains an assortment of vegetables
+                    </li>
+                </ul>
+            </article>
+
+            <article class="salads">
+                <h3 class="menu-subsection-title"><a href="appetizers.html#salads">Salads</a></h3>
+                <ul class="salad-list">
+                    <li class="salad-item" id="caesar-salad">
+                        <a href="appetizers.html#caesar-salad">
+                            <img class="right" src="images/caesarsalad.jpg">
+                            Caesar
+                        </a>
+                        - lettuce, cucumber, croutons
+                    </li>
+                    <li class="salad-item" id="carrot-salad">
+                        <a href="appetizers.html#carrot-salad">
+                            <img class="left" src="images/carrot-salad.jpg" alt="">
+                            Carrot
+                        </a>
+                        - carrots, raisins, sesame seeds, sunflower seeds,
+                        olive oil
+                    </li>
+                </ul>
+            </article>
+
+            <article class="dips">
+                <h3 class="menu-subsection-title"><a href="appetizers.html#dips">Dips</a></h3>
+                <ul class="dips-list">
+                    <li class="dips-item" id="chumus-dip">
+                        <a href="appetizers.html#chummus">
+                            <img class="right" src="images/chumus.jpg" alt="Chummus">
+                            Chummus
+                        </a>
+                    </li>
+                    <li class="dips-item" id="techinna-dip">
+                        <a href="appetizers.html#techinna">
+                            <img class="left" src="images/techinna.jpg" alt="Techinna">
+                            Techinna
+                        </a>
+                    </li>
+                    <li class="dips-item" id="olive-dip">
+                        <a href="appetizers.html#olive-dip">
+                            <img class="right" src="images/olive-dip.jpg" alt="Olive Dip">
+                            Olive Dip
+                        </a>
+                    </li>
+                    <li class="dips-item" id="onion-dip">
+                        <a href="appetizers.html#onion-dip">
+                            <img class="left" src="images/onion-dip.jpg" alt="Onion Dip">
+                            Onion Dip
+                        </a>
+                    </li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="mains">
+            <h2 class="menu-section-title"><a href="mains.html">Mains</a></h2>
+            <article class="mains">
+                <ul class="mains">
+                    <li class="mains-item" id="chicken-schwarma">
+                        <a href="mains.html#chicken-schwarma">
+                            <img class="right" src="images/schwarma.jpg" alt="Chicken Schwarma">
+                            Chicken Schwarma
+                        </a>
+                    </li>
+                    <li class="mains-item">
+                        <a href="mains.html#baby-chicken">
+                            <img class="left" src="images/baby-chicken.jpeg" alt="Baby Chicken">
+                            Baby Chicken
+                        </a>
+                    </li>
+                    <li class="mains-item">
+                        <a href="mains.html#falafel">
+                            <img class="right" src="images/falafel.jpeg" alt="Falafel">
+                            Falafel
+                        </a>
+                    </li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="drinks">
+            <h2 class="menu-section-title"><a href="drinks.html">Drinks</a></h2>
+            <article class="drinks">
+                <ul class="drinks-list">
+                    <li class="drinks-item" id="apple-juice">
+                        <a href="drinks.html#apple-juice">
+                            <img class="left" src="images/apple-juice.jpeg" alt="Apple Juice">
+                            Apple Juice
+                        </a>
+                    </li>
+                    <li class="drinks-item" id="orange-juice">
+                        <a href="drinks.html#orange-juice">
+                            <img class="right" src="images/orange-juice.jpg" alt="Orange Juice">
+                            Orange Juice
+                        </a>
+                    </li>
+                    <li class="drinks-item" id="lemonade">
+                        <a href="drinks.html#lemonade">
+                            <img class="left" src="images/lemonade.jpg" alt="Lemonade">
+                            Lemonade
+                        </a>
+                    </li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="desserts">
+            <h2 class="menu-section-title"><a href="desserts.html">Desserts</a></h2>
+            <article class="pareve-ice-cream">
+                <h3 class="menu-subsection-title"><a href="desserts.html#pareve-ice-cream">Pareve Ice Cream</a></h3>
+                <ul class="pareve-ice-cream-list">
+                    <li class="pareve-ice-cream-item" id="chocolate">
+                        <a href="desserts.html#chocolate-ice-cream">
+                            <img class="right" src="images/chocolate-ice-cream.jpg" alt="Chocolate Ice Cream">
+                            Chocolate
+                        </a>
+                    </li>
+                    <li class="pareve-ice-cream-item" id="vanilla">
+                        <a href="desserts.html#vanilla-ice-cream">
+                            <img class="left" src="images/vanilla-ice-cream.jpg" alt="Vanilla Ice Cream">
+                            Vanilla
+                        </a>
+                    </li>
+                    <li class="pareve-ice-cream-item" id="cookies-n-cream">
+                        <a href="desserts.html#cookies-n-cream">
+                            <img class="right" src="images/cookies-n-cream.jpg" alt="Cookies 'n Cream">
+                            Cookies 'n Cream
+                        </a>
+                    </li>
+                </ul>
+            </article>
+
+            <article class="pastries">
+                <h3 class="menu-subsection-title"><a href="desserts.html#pastries">Pastries</a></h3>
+                <ul class="pastries-list">
+                    <li class="pastries-item" id="chocolate-chip-cookies">
+                        <a href="desserts.html#chocolate-chip-cookies">
+                            <img class="left" src="images/chocolate-chip-cookies.jpg" alt="Chocolate Chip Cookies">
+                            Chocolate Chip Cookies
+                        </a>
+                    </li>
+                    <li class="pastries-item" id="lemon-meringue">
+                        <a href="desserts.html#lemon-meringue">
+                            <img class="right" src="images/lemon-meringue.jpeg" alt="Lemon Meringue">
+                            Lemon Meringue
+                        </a>
+                    </li>
+                </ul>
+            </article>
+        </section>
+    </main>
+</body>
+
+</html>
