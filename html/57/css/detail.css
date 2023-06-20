@@ -1,0 +1,188 @@
+body {
+    background: rgba(219, 141, 31);
+    font-family: 'Geologica', sans-serif;
+}
+
+nav {
+    background: rgba(219, 141, 31);
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+}
+
+nav ul {
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: text-top;
+    margin-top: 0px;
+    margin-bottom: 0.5em;
+
+}
+
+nav li {
+    list-style: none;
+    padding-left: 6px;
+}
+
+.desserts-nav ul, li {
+    text-align: left;
+}
+
+.appetizers-nav ul, li {
+    text-align: left;
+}
+
+.mains-nav ul,
+.drinks-nav ul {
+    padding-left: 0px;
+}
+
+.mains-nav li,
+.drinks-nav li{
+    padding-left: 0px;
+    text-align: center;
+}
+
+
+#univ-nav {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding-left: 40px;
+    vertical-align: text-top;
+
+}
+
+h1:not(main h1) {
+    text-align: center;
+    background-color: rgba(219, 141, 31, 1);
+    font-size: 2.5em;
+}
+
+h3 {
+    font-size: 1.8em;
+    margin: 0.5em;
+    text-shadow: 3px 3px 3px rgb(17, 64, 141);
+}
+
+h4 {
+    font-size: 1.3em;
+    margin: 0.3em;
+}
+
+main {
+    width: 70%;
+    margin: auto;
+    /* margin-top: 1em; */
+}
+
+main h1 {
+    text-align: left;
+    font-size: 1.8em;
+}
+
+main h1,
+h2 {
+    scroll-margin-top: 6.7em;
+}
+
+p {
+    color: rgb(84, 37, 2);
+}
+
+body>h1 {
+    color: darkcyan;
+}
+
+h1+h2 {
+    color: indigo;
+}
+
+img {
+    clear: left;
+    float: left;
+    padding-right: 1em;
+    padding-top: 0.3em;
+    padding-bottom: 0.5em;
+    width: 150px;
+    height: 165px;
+}
+
+.container {
+    position: relative;
+}
+
+#flowers {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    top: 0;
+    right: 0;
+    padding: 0;
+
+}
+
+@media screen and (width > 915px) {
+
+    nav {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        box-sizing: border-box;
+        width: 23%;
+        height: 50%;
+        margin-right: 0em;
+        margin-left: 0.5em;
+        margin-top: 4em;
+        border-right: 1px solid black;
+    }
+
+    nav ul {
+        display: block;
+        margin: 0.5em;
+        padding-left: 0px;
+    }
+
+    nav li {
+        line-height: 1.5em;
+    }
+
+    #univ-nav {
+        position: static;
+        padding-left: 0px;
+    }
+    
+    h3 {
+        font-size: 1.2em;
+        margin-bottom: 0.5em;
+    }
+
+    .desserts-nav h3, .appetizers-nav h3 {
+        text-align: left;
+    } 
+
+    h1:not(main h1) {
+        position: fixed;
+        z-index: 1;
+        width: 100%;
+        top: 0px;
+        margin-top: 0px;
+        padding-top: 10px;
+        height: 1.5em;
+        background-color: rgba(219, 141, 31, 1);
+    }
+
+    main h1,
+    h2 {
+        scroll-margin-top: 3em;
+    }
+
+    main {
+        margin: auto;
+        margin-left: 25%;
+        margin-top: 4.5em;
+        text-align: justify;
+    }
+}
