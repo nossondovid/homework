@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <!-- <link rel="stylesheet" href="css/nossons-restaurant.css"> -->
+    <!-- <link rel="stylesheet" href="css/detail.css"> -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geologica&display=swap">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+    <style>
+        body {
+            font-family: 'Geologica', sans-serif;
+            background-color: rgba(219, 141, 31, 1);
+        }
+
+        form div {
+            max-width: 300px;
+            margin: auto;
+            margin-bottom: 1em;
+            text-align: center;
+        }
+
+
+        label {
+            display: block;
+            text-transform: uppercase;
+            color: rgb(5, 5, 104);
+            text-align: left;
+        }
+
+        input:not([type="submit"]) {
+            box-sizing: border-box;
+            /* max-width: 300px; */
+        }
+
+        [type="submit"] {
+            display: block;
+            max-width: 80px;
+            margin: auto;
+            margin-top: 0.5em;
+        }
+
+        .comments {
+            max-width: 400px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .comments h1 {
+            color: rgb(252, 187, 9);
+            text-shadow: 3px 3px 3px rgb(17, 64, 141);
+
+        }
+
+        .comments h2 {
+            color: indigo;
+            text-shadow: 2px 2px 3px rgb(17, 64, 141);
+        }
+
+
+        @media screen and (width > 650px) {
+
+            div {
+                box-sizing: border-box;
+                max-width: 600px;
+                margin: auto;
+                margin-bottom: 1em;
+                text-align: center;
+            }
+
+
+            label {
+                box-sizing: border-box;
+                display: inline-block;
+                width: 100px;
+                margin-right: 5px;
+                white-space: nowrap;
+                text-transform: uppercase;
+                color: navy;
+                text-align: left;
+            }
+
+            input:not([type="submit"]) {
+                box-sizing: border-box;
+                display: inline-block;
+                margin: auto;
+                width: 300px;
+                max-width: 500px;
+                min-width: 200px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="comments">
+        <h1>Feedback</h1>
+        <h2>If you have any comments or questions, please leave them in the comments section below.</h2>
+    </div>
+    <form method="post">
+        <div>
+            <label for="firstName">First name:</label>
+            <input id="firstName" type="text" name="firstName" minLength="3" maxLength="15"
+                placeholder="First name here">
+        </div>
+        <div>
+            <label for="lastName">Last name:</label>
+            <input id="lastName" type="text" name="lastName" minLength="3" maxLength="15" placeholder="Last name here"
+                required>
+        </div>
+        <div>
+            <label for="password">password:</label>
+            <input id="password" type="password" name="password" minLength="6" maxLength="15" required>
+        </div>
+        <div>
+            <label for="email">email:</label>
+            <input id="email" type="email" name="email" required placeholder="Email here">
+        </div>
+        <div>
+            <label for="comments">comments:</label>
+            <input id="comments" type="text" height="100px" width="100px" required>
+        </div>
+        <input type="submit">
+    </form>
+
+
+</body>
+
+</html>

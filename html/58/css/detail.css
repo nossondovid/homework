@@ -1,48 +1,48 @@
 nav {
-    position: sticky;
-    top: 0px;
-    width: 100%;
-    text-align: center;
-    z-index: 1;
+    /* position: sticky; */
+    /* top: 0px; */
+    /* width: 100%; */
+    /* text-align: center; */
+    /* z-index: 1; */
 }
 
 .appetizers-nav ul {
-    display: inline-block;
+    /* display: inline-block; */
 }
 
 .appetizers-nav li {
-    display: block;
+    /* display: block; */
 
 }
 
 .desserts-nav ul,
 li {
-    text-align: left;
+    /* text-align: left; */
 }
 
 .appetizers-nav ul,
 li {
-    text-align: left;
+    /* text-align: left; */
 }
 
 .mains-nav ul,
 .drinks-nav ul {
-    padding-left: 0px;
+    /* padding-left: 0px; */
 }
 
 .mains-nav li,
 .drinks-nav li {
-    padding-left: 0px;
-    text-align: center;
+    /* padding-left: 0px; */
+    /* text-align: center; */
 }
 
 
 #univ-nav {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    padding-left: 40px;
-    vertical-align: text-top;
+    /* position: absolute; */
+    /* top: 0px; */
+    /* left: 0px; */
+    /* padding-left: 40px; */
+    /* vertical-align: text-top; */
 
 }
 
@@ -100,25 +100,26 @@ img {
 @media screen and (width > 800px) {
 
     nav {
-        position: fixed;
-        top: 0px;
-        left: 0px;
-        box-sizing: border-box;
-        width: 20%;
-        height: 100%;
-        margin-left: 0.5em;
-        border-right: 1px solid black;
+        /* position: fixed; */
+        /* top: 0px; */
+        /* left: 0px; */
+        /* box-sizing: border-box; */
+        /* width: 20%; */
+        /* height: 100%; */
+        /* margin-left: 0.5em; */
+        /* border-right: 1px solid black; */
     }
 
     nav ul {
-        display: block;
-        margin: 0.5em;
-        padding-left: 0px;
+        /* display: block; */
+        /* margin: 0.5em; */
+        /* padding-left: 0px; */
     }
 
     #univ-nav {
-        position: static;
+        /* position: static; */
         /* padding-left: 0px; */
+        background-repeat:  ;
     }
 
     main {
