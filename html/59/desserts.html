@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desserts</title>
-    <link rel="stylesheet" href="css/nossons-restaurant.css">
-    <link rel="stylesheet" href="css/detail.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/sections.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geologica&display=swap">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,52 +15,41 @@
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
     <link rel="manifest" href="images/site.webmanifest">
-
-    <style>
-        /*styling dessert subcategories in navbar*/
-        nav div {
-            font-style: italic;
-            display: inline-block;
-            vertical-align: top;
-            margin: 0em 1em;
-        }
-        /* styling dessert items in navbar */
-        nav div>li {
-            display: block;
-        }
-        /* reducing margin around dessert subcategory headings in navbar */
-        nav div>h3 {
-            margin: 0.25em;
-        }
-    </style>
 </head>
 
 <body>
     <header>
         <h1>Desserts</h1>
     </header>
-    <nav class="desserts-nav">
+    <nav>
         <ul id="univ-nav">
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="menu.html">MENU</a></li>
+            <li><a href="index.html">Home</a></li>
+            <div class="dropdown">
+                <li><a href="menu.html">Menu</a></li>
+                <div class="dropdown-content">
+                    <a href="appetizers.html">Appetizers</a>
+                    <a href="mains.html">Mains</a>
+                    <a href="desserts.html">Desserts</a>
+                    <a href="drinks.html">Drinks</a>
+                </div>
+            </div>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="history.html">History</a></li>
         </ul>
-        <ul>
-            <div>
-                <h3><a href="#pareve-ice-cream">Pareve Ice Cream</a></h3>
-                <li><a href="#chocolate-ice-cream">Chocolate</a></li>
-                <li><a href="#vanilla-ice-cream">Vanilla</a></li>
-                <li><a href="#cookies-n-cream">Cookies 'n Cream</a></li>
-            </div>
-            <div>
-                <h3><a href="#pastries">Pastries</a></h3>
-                <li><a href="#chocolate-chip-cookies">Chocolate Chip Cookies</a></li>
-                <li><a href="#lemon-meringue">Lemon Meringue</a></li>
-            </div>
+        <ul id="section-nav">
+            <h3><a href="#pareve-ice-cream">Pareve Ice Cream</a></h3>
+            <li><a href="#chocolate-ice-cream">Chocolate</a></li>
+            <li><a href="#vanilla-ice-cream">Vanilla</a></li>
+            <li><a href="#cookies-n-cream">Cookies 'n Cream</a></li>
+
+            <h3><a href="#pastries">Pastries</a></h3>
+            <li><a href="#chocolate-chip-cookies">Chocolate Chip Cookies</a></li>
+            <li><a href="#lemon-meringue">Lemon Meringue</a></li>
         </ul>
     </nav>
-    <main>
-        <div class="ice-cream">
-            <h2 id="pareve-ice-cream" class="section-title">Pareve Ice Cream</h2>
+    <main class="desserts">
+        <section class="desserts__pareve-ice-cream">
+            <h2 id="pareve-ice-cream">Pareve Ice Cream</h2>
             <h3 id="chocolate-ice-cream">Chocolate</h3>
             <img src="images/chocolate-ice-cream.jpg" alt="chocolate ice cream">
             <p>
@@ -73,7 +62,6 @@
                 ut dicta magni assumenda repellendus. Dignissimos, nemo. Neque ad iusto tempora dolorem veniam,
                 praesentium blanditiis quasi a maiores aut quia.
             </p>
-
             <h3 id="vanilla-ice-cream">Vanilla</h3>
             <img src="images/vanilla-ice-cream.jpg" alt="vanilla ice cream">
             <p>
@@ -86,7 +74,6 @@
                 natus iusto voluptatibus aut quis accusamus laudantium quia deserunt, nesciunt inventore quo rerum
                 molestiae. Velit ab ea numquam rem?
             </p>
-
             <h3 id="cookies-n-cream">Cookies 'n Cream</h3>
             <img src="images/cookies-n-cream.jpg" alt="cookies 'n cream">
             <p>
@@ -99,9 +86,10 @@
                 error dolor explicabo itaque commodi officiis velit? Iusto officia non recusandae quo sapiente
                 laudantium!
             </p>
-        </div>
-        <div class="pastries">
-            <h2 id="pastries" class="section-title">Pastries</h2>
+        </section>
+
+        <section class="desserts__pastries">
+            <h2 id="pastries">Pastries</h2>
             <h3 id="chocolate-chip-cookies">Chocolate Chip Cookies</h3>
             <img src="images/chocolate-chip-cookies.jpg" alt="chocolate chip cookies">
             <p>
@@ -113,6 +101,7 @@
                 labore repellendus beatae optio nostrum ea minima ab amet ipsum quo earum, accusantium tempora ipsam
                 animi? Quas pariatur, ea accusamus sit in sapiente quaerat earum suscipit voluptas possimus.
             </p>
+
             <h3 id="lemon-meringue">Lemon Meringue</h3>
             <img src="images/lemon-meringue.jpeg" alt="lemon meringue">
             <p>
@@ -125,7 +114,7 @@
                 vel. Architecto nulla amet qui, repudiandae magni voluptate repellat facere commodi! Minima sunt
                 perspiciatis deleniti cumque quis porro asperiores?
             </p>
-        </div>
+        </section>
     </main>
 </body>
 

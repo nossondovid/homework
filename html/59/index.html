@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nosson's Schwarma</title>
-    <link rel="stylesheet" href="css/nossons-restaurant.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geologica&display=swap">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,7 +14,18 @@
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
     <link rel="manifest" href="images/site.webmanifest">
     <style>
+        .home {
+            padding: 1em;
+            padding-top: 0;
+            background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+            border: 5px ridge rgb(255, 199, 46);
+            border-radius: 40px;
+            box-shadow: 0px 0px 50px #43a6df;
+        }
 
+        .about {
+            color: rgb(252, 187, 9);
+        }
     </style>
 </head>
 
@@ -22,11 +33,10 @@
     <header>
         <h1>Nosson's Schwarma</h1>
     </header>
-
-    <nav id="home-page-nav">
-        <ul>
-            <li><a href="index.html">Home</a></li><!--
-            --><div class="dropdown">
+    <nav>
+        <ul id="univ-nav">
+            <li><a href="index.html">Home</a></li>
+            <div class="dropdown">
                 <li><a href="menu.html">Menu</a></li>
                 <div class="dropdown-content">
                     <a href="appetizers.html">Appetizers</a>
@@ -34,12 +44,11 @@
                     <a href="desserts.html">Desserts</a>
                     <a href="drinks.html">Drinks</a>
                 </div>
-            </div><!--
-            --><li><a href="contact.html">Contact</a></li><!--
-            --><li><a href="history.html">History</a></li>
+            </div>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="history.html">History</a></li>
         </ul>
     </nav>
-
     <main class="home">
         <h2>About</h2>
         <p class="about">
