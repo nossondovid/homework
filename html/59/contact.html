@@ -15,79 +15,40 @@
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
     <link rel="manifest" href="images/site.webmanifest">
     <style>
-        form div {
-            max-width: 300px;
-            margin: auto;
-            margin-bottom: 1em;
+        main>h2 {
+            max-width: 400px;
+            margin: 0.5em auto 1em;
             text-align: center;
         }
-        
-        label {
-            display: block;
-            text-transform: uppercase;
-            color: rgb(5, 5, 104);
-            text-align: left;
+
+        form div {
+            max-width: fit-content;
+            margin: 0 auto 1em;
         }
 
-        input:not([type="submit"]) {
-            box-sizing: border-box;
-            /* max-width: 300px; */
+        form label {
+            display: block;
+            margin-bottom: 2px;
+            text-transform: uppercase;
+            color: rgb(5, 5, 104);
         }
 
         [type="submit"] {
             display: block;
-            max-width: 80px;
-            margin: auto;
-            margin-top: 0.5em;
-        }
-
-        .comments {
-            max-width: 400px;
-            margin: auto;
-            text-align: center;
-        }
-
-        .comments h1 {
-            color: rgb(252, 187, 9);
-            text-shadow: 3px 3px 3px rgb(17, 64, 141);
-
-        }
-
-        .comments h2 {
-            color: indigo;
-            text-shadow: 2px 2px 3px rgb(17, 64, 141);
+            margin: 0em auto 1em;
         }
 
 
         @media screen and (width > 650px) {
 
-            div {
-                box-sizing: border-box;
-                max-width: 600px;
-                margin: auto;
-                margin-bottom: 1em;
-                text-align: center;
-            }
-
-
-            label {
-                box-sizing: border-box;
+            form label {
                 display: inline-block;
                 width: 100px;
                 margin-right: 5px;
-                white-space: nowrap;
-                text-transform: uppercase;
-                color: navy;
-                text-align: left;
             }
 
-            input:not([type="submit"]) {
-                box-sizing: border-box;
-                display: inline-block;
-                margin: auto;
-                width: 300px;
-                max-width: 500px;
-                min-width: 200px;
+            [type="submit"] {
+                transform: translateX(50px);
             }
         }
     </style>
@@ -114,9 +75,7 @@
         </ul>
     </nav>
     <main>
-        <div class="comments">
-            <h2>If you have any comments or questions, please leave them in the comments section below.</h2>
-        </div>
+        <h2>If you have any comments or questions, please leave them in the comments section below.</h2>
         <form method="post">
             <div>
                 <label for="firstName">First name:</label>
