@@ -22,7 +22,14 @@ main {
 
 /* styles for univ-nav */
 
+#univ-nav {
+    justify-content: center;
+    text-transform: uppercase;
+    
+}
+
 nav ul {
+    display: flex;
     background-color: rgb(180, 110, 12);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 0px;
@@ -31,23 +38,17 @@ nav ul {
     position: relative;
     text-align: center;
     width: 100%;
-    text-transform: uppercase;
+    
 }
 
-nav li {
-    display: inline-block;
+#univ-nav li:not(:last-child) {
     border-right: 2px solid #bbb;
 
-}
-
-nav li:last-child {
-    border-right: none;
 }
 
 nav li a {
     display: block;
     color: black;
-    text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }

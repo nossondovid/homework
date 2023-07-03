@@ -23,20 +23,15 @@ img {
 
 /* fixing section-nav to the left */
 #section-nav {
+    display: flex;
+    flex-flow: column nowrap;
     position: fixed;
     top: 0;
     left: 0;
     border-right: 2px solid black;
-    overflow-y: auto;
+    overflow-y: scroll;
     max-width: 115px;
     height: 100%;
-}
-
-/* styling section-nav li's */
-#section-nav li {
-    display: block;
-    border-right: none;
-    text-transform: capitalize;
 }
 
 /* setting borders to section nav li's */
